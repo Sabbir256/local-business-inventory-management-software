@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.0"
 
+gem 'better_errors', '~> 2.9', '>= 2.9.1'
+gem 'pg', '~> 1.4', '>= 1.4.3'
+gem 'bootstrap', '~> 5.2'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
