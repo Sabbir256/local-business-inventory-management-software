@@ -1,0 +1,26 @@
+<div class="left-group">
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="search anything"/>
+    </div>  
+</div>
+
+<div class="right-group">
+    <%if Current.user%>
+        <div class="notification">
+        <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div class="user">
+            <%= image_tag("avatar.jpeg", alt: "avatar") %>
+            <div class="user-details">
+                <div class="name"><%=Current.user.name%></div>
+                <div class="title"><%=Current.user.role%></div>
+            </div>
+        </div>
+
+        <div class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+    <%end%>
+</div>

@@ -1,0 +1,143 @@
+:root{
+    --dark-blue: #034694;
+    --inactive: #a9a9a9;
+    --active: #007FFF;
+    --light-ash: #f7f7f7;
+    --dark-gray: #888;
+    --light-blue: #DCEDFF;
+}
+/* left side */
+.left{
+    min-width: 20%;
+    box-shadow: 2px 0 10px 2px whitesmoke;
+}
+
+.business-name{
+    color:var(--dark-blue);
+    height: 60px;
+    padding-top: 15px;
+    padding-left: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* left menu */
+.menu{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--inactive);
+    font-weight: 500;
+    font-size: 0.97rem;
+}
+.menu a:hover{
+    color: var(--active);
+}
+.menu-item{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 3em;
+    height: 3em;
+    margin-right: 20px;
+}
+.menu-item .icon i{
+    font-size: 1.2rem;
+    padding: 15px;
+    color: var(--inactive);
+}
+.active .icon i{
+    border-radius: 50px;
+    color: var(--active);
+    background-color: var(--light-blue);
+}
+.active a{
+    color: var(--active);
+}
+
+.menu-item:hover{
+    cursor: pointer;
+}
+.menu-item:hover a{
+    color: var(--active);
+}
+.menu-item:hover i{
+    color: var(--active);
+}
+
+/* right side */
+/* top bar */
+.right{
+    min-width: 80%;
+}
+.top-bar{
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 2px 10px 2px whitesmoke;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box{
+    background: var(--light-ash);
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+.search-box > input{
+    width:300px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 0.88rem;
+}
+.search-box > input::placeholder{
+    font-size: 0.88rem;
+    color: var(--dark-gray);
+}
+.search-box > i{
+    font-size: 0.88rem;
+    color: var(--dark-gray);
+}
+
+
+.right-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.user{
+    display: flex;
+    background-color: var(--light-ash);
+    border-radius: 50px;
+    height: 40px;
+}
+.user > img{
+    padding-left: 3px;
+    height: 40px;
+    border-radius: 50px;
+}
+.user-details{
+    padding: 0 25px 0 15px;
+}
+.user-details .name{
+    color: #555;
+    font-size: 0.9rem;
+}
+.user-details .title{
+    color: #999;
+    font-size: 0.75rem;
+}
+
+.notification, .logout > i{
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+}
+
+.notification, .logout > i:hover{
+    cursor: pointer;
+}
