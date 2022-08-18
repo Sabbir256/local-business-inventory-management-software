@@ -14,18 +14,30 @@
         <div class="user">
             <%= image_tag("avatar.jpeg", alt: "avatar") %>
             <div class="user-details">
-                <div class="name"><%=Current.user.name%></div>
-                <div class="title"><%=Current.user.role%></div>
+                    <%if Current.user.name %>
+                        <div class="name">
+                                <%=Current.user.name%>
+                        </div>
+                        <div class="title"><%=Current.user.role%></div>
+                    <%else%>
+                        <div class="name">
+                            <%= Current.user.email%>
+                        </div>
+                    <%end%>
             </div>
         </div>
 
         <div class="logout">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <%= button_to logout_path, method: :delete do%>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <%end%> 
         </div>
 
     <%else %>
-        <div class>
-             <%= link_to "Login", login_path %>
+        <div class="login">
+             <%= link_to login_path do%>
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+             <%end%>
         </div>
     <%end%>
 </div>

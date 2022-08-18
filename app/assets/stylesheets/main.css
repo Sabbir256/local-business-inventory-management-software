@@ -122,6 +122,8 @@
     border-radius: 50px;
 }
 .user-details{
+    display: flex;
+    align-items: center;
     padding: 0 25px 0 15px;
 }
 .user-details .name{
@@ -140,4 +142,18 @@
 
 .notification, .logout > i:hover{
     cursor: pointer;
+}
+
+.right-group .login a{
+    text-decoration: none;
+}
+
+.logout button{
+    background-color: transparent;
+    border: none;
+    color:var(--dark-gray);
+}
+
+.logout button:hover{
+    color: var(--active);
 }
