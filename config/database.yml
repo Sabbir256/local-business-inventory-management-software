@@ -6,23 +6,23 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   pool: 5
-  username: sabbir
+  username: <%= ENV['USERNAME'] %>
   port: 5432
-  password:
+  password: <%= ENV['PASSWORD'] %>
 
 development:
   <<: *default
-  database: db_inventory
+  database: <%= ENV['DATABASE'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db_inventory_test
+  database: <%= ENV['DATABASE_TEST'] %>
 
 production:
   <<: *default
-  database: db_inventory
+  database: <%= ENV['DATABASE'] %>
