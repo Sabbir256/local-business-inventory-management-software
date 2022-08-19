@@ -115,6 +115,19 @@
     background-color: var(--light-ash);
     border-radius: 50px;
     height: 40px;
+    align-items: center;
+}
+
+.user .dropdown i{
+    color: var(--dark-gray);
+    padding-right: 15px;
+}
+.user .dropdown i:hover{
+    cursor: pointer;
+}
+
+.dropdown-menu li{
+    font-size: 0.9rem;
 }
 .user > img{
     padding-left: 3px;
@@ -124,7 +137,7 @@
 .user-details{
     display: flex;
     align-items: center;
-    padding: 0 25px 0 15px;
+    padding: 0 15px 0 15px;
 }
 .user-details .name{
     color: #555;

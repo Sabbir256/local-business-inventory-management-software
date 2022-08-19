@@ -18,3 +18,43 @@
     box-shadow: 0 0 15px 4px whitesmoke;
     border-radius: 5px;
 }
+
+
+/* edit profile */
+
+.profile-body{
+    width: 60%;
+    margin-top: 10%;
+}
+
+.profile-body .equal{
+    width: 48%;
+}
+
+.profile-body .eq-2{
+    width: 31%;
+}
+
+.avatar-section{
+    margin-bottom: 40px;
+}
+.avatar-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.avatar-img img{
+    width: 100%;
+}
+
+.details .role{
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.profile-body input{
+    font-size: 0.92rem;
+    color: #444;
+}
