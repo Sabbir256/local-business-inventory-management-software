@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get "profile_edit", to:"profile#edit"
   patch "profile_edit", to:"profile#update"
+
+  get "admin", to: "admin#new"
 end

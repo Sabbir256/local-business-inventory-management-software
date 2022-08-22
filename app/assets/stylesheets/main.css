@@ -30,6 +30,7 @@
     color: var(--inactive);
     font-weight: 500;
     font-size: 0.97rem;
+    width: 100%;
 }
 .menu a:hover{
     color: var(--active);

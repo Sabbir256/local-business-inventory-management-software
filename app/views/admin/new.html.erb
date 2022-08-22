@@ -1,0 +1,20 @@
+<div class="admin-container">
+    <table class="admin-table">
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Profile</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <% @users.each do |user| %>
+            <tr>
+                <td><%= user.name %></td>
+                <td><%= user.role %></td>
+                <td><%= user.profile %></td>
+                <td><%= user.email %></td>
+            </tr>
+        <%end%>
+    </table>
+    
+</div>

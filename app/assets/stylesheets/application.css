@@ -14,4 +14,5 @@
  *= require_self
  */
 
- @import "sessions.css"
+ @import "sessions.css";
+ @import "admin.css";
