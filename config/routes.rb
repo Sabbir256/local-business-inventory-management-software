@@ -11,5 +11,8 @@ Rails.application.routes.draw do
   get "profile_edit", to:"profile#edit"
   patch "profile_edit", to:"profile#update"
 
-  get "admin", to: "admin#new"
+  # get "admin", to: "admin#index"
+  # get "edit_user", to: "admin#edit"
+  # post "edit_user", to: "admin#update"
+  resources :users
 end

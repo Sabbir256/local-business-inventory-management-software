@@ -1,0 +1,25 @@
+.table{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin-top: 5%;
+}
+.table__tr{
+    display: flex;
+    border: 1px solid #888;
+}
+
+.table__td,
+.table__th{
+    min-width: 150px;
+    margin: 0 1px;
+}
+
+.table__head{
+    font-weight: bold;
+}
+
+.table__th{
+    background-color: var(--active)!important;
+    color: #fff;
+}

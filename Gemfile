@@ -6,6 +6,7 @@ ruby "3.0.0"
 gem 'pg', '~> 1.4', '>= 1.4.3'
 # gem 'bootstrap', '~> 5.2'
 gem 'dotenv-rails'
+gem 'simple_form', '~> 5.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
